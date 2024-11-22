@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPHONE</title>
+    <style>
+
+
+        h1{
+            margin-top: 0;
+            color: red ;
+             text-align: center;
+             }
+         form{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        background:lightgrey;
+        color:red
+        }
+        .switch-field{
+            justify-content: center;
+            text-align: center;
+            accent-color: red;
+            padding: 25px;
+        }
+
+        .btn{
+             border: 0;
+             border-radius: 40px;
+             font-size:1.8rem;
+             font-weight:600;
+             margin: 1.8rem 0;
+             padding: 1rem 1rem;
+             cursor:pointer;
+             background: dodgerblue;
+             color: white;
+        }
+        .btn:hover{
+            background: lightgreen;
+            color:red;
+
+    </style>
+</head>
+<body>
+    <h1>Iphone Purchase Prediction Based on Age, Sex and Salary.</h1>
+
+    <form action="/predict" method="post">
+        <div class="box"><h3>Enter your Age</h3></div>
+        <div class="box" ><input class="text" type="number" name="age"></div>
+        <div class="box1"><h3>Enter Salary</h3></div>
+        <div class="box1"><input class="text" type="number" name="salary"></div>
+        <div class="switch-field">
+            <input type="radio"  id="radio1" name='sex' value="0">
+            <label for="radio1">Female</label>
+            <input type="radio"  id="radio2" name='sex' value="1">
+            <label for="radio2">Male</label>
+        </div>
+        <button type="submit" class="btn" >Submit</button>
+    </form>
+
+</body>
+</html>
